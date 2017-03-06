@@ -6,7 +6,7 @@ endif()
 
 
 # This project is designed to be built outside the Insight source tree.
-project(slice)
+project(Graph_cut)
 
 # Find ITK.
 find_package(ITK REQUIRED)
@@ -15,6 +15,6 @@ find_package(VTK REQUIRED)
 include(${ITK_USE_FILE})
 include(${VTK_USE_FILE})
 
-add_executable(slice slice.cxx )
+add_executable(Graph_cut Graph_cut.cxx )
 
-target_link_libraries(slice ${ITK_LIBRARIES} ${VTK_LIBRARIES})
+target_link_libraries(Graph_cut ${ITK_LIBRARIES} ${VTK_LIBRARIES})
